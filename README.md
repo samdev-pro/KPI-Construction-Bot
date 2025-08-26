@@ -6,7 +6,7 @@ The **Construction KPI Bot** is a Python-based automation tool that demonstrates
 - **Reporting** with [fpdf2](https://py-pdf.github.io/fpdf2/)
 - **Automation** with built-in email support
 
-It generates a professional PDF report of construction project KPIs (Key Performance Indicators) from a CSV file, complete with charts and summary tables.
+It generates a professional PDF report of construction project KPIs (Key Performance Indicators) from a CSV file, complete with charts and summary tables. Instead of a CSV file, an API could also be used to connect to platforms like Procore or Autodesk to pull KPIs from.
 
 ---
 
@@ -17,7 +17,6 @@ It generates a professional PDF report of construction project KPIs (Key Perform
   - **Budget Variance (%)**
 - Create a polished PDF report with:
   - Per-project KPIs
-  - Data tables
   - Charts embedded in-line
 - Automated email delivery of the report
 - Secure handling of email credentials using environment variables
@@ -56,7 +55,7 @@ EMAIL_PASS=your_app_password
 
 ### ▶️ Usage
 
-1. Add or update your mock_data.csv with project metrics
+1. Add or update the mock_data.csv with project metrics
 2. Run the KPI Bot:
 ```bash
 python3 kpi_bot.py
@@ -72,7 +71,7 @@ python3 kpi_bot.py
 ### 📑 Sample Output
 
 **PDF Report Includes:**
-* Project-level KPI summary tables
+* Project-level KPI summary data
 * Schedule Completion chart
 * Budget Variance chart
   
