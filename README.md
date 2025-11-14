@@ -1,106 +1,97 @@
-# 🏗️ Construction KPI Bot
+# 🤖 KPI Construction Bot
 
-The **Construction KPI Bot** is a Python-based automation tool that demonstrates:
-- **Data handling** with [pandas](https://pandas.pydata.org/)
-- **Visualization** with [matplotlib](https://matplotlib.org/)
-- **Reporting** with [fpdf2](https://py-pdf.github.io/fpdf2/)
-- **Automation** with built-in email support
-
-It generates a professional PDF report of construction project KPIs (Key Performance Indicators) from a CSV file, complete with charts and summary tables. Instead of a CSV file, an API could also be used to connect to platforms like Procore or Autodesk to pull KPIs from.
+> A Python-based automation engine that generates KPI reports for construction Quality Control (QC) and budgeting workflows.  
+> *(Automates ETL, reporting, and email delivery to improve efficiency and timeliness of data insights.)*
 
 ---
 
-## ✨ Features
-- Load and process project data from a CSV file
-- Generate charts for:
-  - **Schedule Completion (%)**
-  - **Budget Variance (%)**
-- Create a polished PDF report with:
-  - Per-project KPIs
-  - Charts embedded in-line
-- Automated email delivery of the report
-- Secure handling of email credentials using environment variables
+## 🧭 Overview
+
+The **KPI Construction Bot** demonstrates the potential of data-driven automation in construction operations — showcasing how streamlined workflows can deliver clear visual insights and measurable efficiency gains.
+
+Developed to eliminate repetitive manual reporting, the bot automatically generates KPI summaries and PDF/email reports for QC, NCR, and budget tracking.  
+
+The current version reads data from a CSV file for demonstration purposes but can be adapted to integrate with platforms like Procore or Smartsheet via their APIs. To accelerate development, I used ChatGPT and Cursor AI as part of the build process — illustrating how AI-assisted tools can enhance coding speed and workflow efficiency.
+
+By automating data collection and visualization, this system provides consistent, repeatable, and transparent KPI reporting for project managers and commissioning teams.
 
 ---
 
-## ⚙️ Setup
+## 🧰 What I Did
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/kpi-bot.git
-cd kpi-bot
-```
-
-### 2. Create and activate a virtual environment
-```bash
-python3 -m venv venv
-source venv/bin/activate   # On macOS/Linux
-venv\Scripts\activate      # On Windows
-```
-
-### 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Configure environment variables
-Create a .env file in the project root:
-```bash
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_USER=your_email@example.com
-EMAIL_PASS=your_app_password
-```
-⚠️ **Security Note**: Never hardcode credentials into your scripts. Always store sensitive data like email passwords in environment variables.
-
-### ▶️ Usage
-
-1. Add or update the mock_data.csv with project metrics
-2. Run the KPI Bot:
-```bash
-python3 kpi_bot.py
-```
-3. The script will:
-   * Process the CSV with pandas
-   * Generate KPI charts with matplotlib
-   * Create a PDF report
-   * Send the report to configured email recipients
+**Data Engineering:** Python · Pandas · NumPy · ETL · CSV Transformation  
+**Construction Tech:** Smartsheet · QC/NCR/Punch List Tracking  
+**Automation & Visualization:** Matplotlib · FPDF · Email Automation · PDF  
+**Dev Tools:** GitHub · ChatGPT · Cursor  
 
 ---
 
-### 📑 Sample Output
+## 🚀 Features
 
-**PDF Report Includes:**
-* Project-level KPI summary data
-* Schedule Completion chart
-* Budget Variance chart
-  
-Example (illustrative only):
-```bash
-
-Project: Building A
- - Budget: $1,200,000.00
- - Actual Cost: $1,180,500.00
- - Budget Variance %: -1.6%
- - Scheduled Tasks: 120
- - Completed Tasks: 95
- - Schedule % Complete: 79.2%
-
-```
-📎 The PDF will also embed **bar charts** showing project schedule and budget performance.
+- Automated ETL pipeline that cleans and aggregates project data  
+- Generates KPI visualizations (pass rate, punch list aging, budget usage)  
+- Converts outputs to PDF reports and emails them to stakeholders  
+- Scheduled automation with customizable frequency  
 
 ---
 
-### 🚀 Future Improvements
+## 🧠 Tech Stack
 
-* Add trend analysis over time
-* Support for Excel input files
-* More KPIs (change orders, subcontractor performance, etc.)
-* Web dashboard integration
+| Category | Tools & Libraries |
+|-----------|------------------|
+| **Languages** | Python |
+| **Data Processing** | Pandas · NumPy |
+| **Visualization** | Matplotlib |
+| **Reporting & Output** | FPDF · CSV · Smartsheet |
+| **Automation** | smtplib (Email) · Task Scheduler / Cron |
+| **Version Control** | GitHub |
 
 ---
 
-### 📬 Contact
+## 📊 Example Outputs
 
-[Sam Huss]
-Feel free to fork, open issues, or suggest improvements!
+> *(Insert screenshots or GIFs of reports, PDF pages, or KPI visualizations.)*
+
+**Examples:**
+- Weekly KPI Summary PDF  
+- NCR Aging Bar Chart  
+- Punch List Closure Rate Line Chart  
+- Budget Utilization Pie Chart  
+
+*(Store visuals in `/assets/` or `/images/` and reference them here.)*
+
+---
+
+## ⚙️ How It Works
+
+1. **Extract** – Pulls exported data from Smartsheet or CSV input files.  
+2. **Transform** – Uses Pandas to clean, merge, and calculate project KPIs.  
+3. **Visualize** – Builds Matplotlib charts summarizing performance trends.  
+4. **Automate** – Compiles charts into PDF reports and emails them automatically to project stakeholders.
+
+---
+
+## 📈 Results & Impact
+
+This automation tool was developed to demonstrate the potential of data-driven reporting in construction operations — showing how automation can deliver clear visual insights and measurable efficiency gains.
+
+By reducing manual reporting time, QC and project managers can focus on analysis instead of data preparation.
+
+The system provides consistent, repeatable, and easily auditable KPI reporting, enabling faster insights and greater project transparency.
+
+---
+
+## 🧩 Future Improvements
+
+- Add Smartsheet API and Procore integration for real-time data ingestion
+- More KPIs (change orders, subcontractor performance, etc.)
+- Implement web dashboard output (Astro/React) for interactive KPI visualization
+- Integrate Slack or Teams notifications for weekly report summaries
+- Web dashboard integration
+
+---
+
+## 🤝 Contact
+
+Interested in how I can help your team transform its construction data workflows? Let’s connect.<br />
+📧 [Email Me](mailto:sam@samhuss.dev)  💼 [LinkedIn](https://www.linkedin.com/in/samhuss/)
