@@ -90,6 +90,9 @@ construction_kpi_bot/
 
 ## 📊 Outputs
 
+📸 [View KPI Report PDF](https://github.com/samdev-pro/KPI-Construction-Bot/blob/main/output/kpi_report.pdf)
+output/kpi_report.pdf
+
 The generated PDF includes:
 
 **Page 1: Overview**
