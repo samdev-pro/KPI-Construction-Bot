@@ -1,6 +1,7 @@
 # 🤖 KPI Construction Bot
 
 > A Python-based automation engine that generates KPI reports for construction Quality Control (QC) and budgeting workflows.
+
 > *(Automates ETL, reporting, and email delivery to improve efficiency and timeliness of data insights.)*
 
 ---
