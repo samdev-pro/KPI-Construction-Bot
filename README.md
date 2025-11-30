@@ -16,6 +16,8 @@ The current version reads data from a CSV file for demonstration purposes but ca
 
 By automating data collection and visualization, this system provides consistent, repeatable, and transparent KPI reporting for project managers and commissioning teams.
 
+📸 [View KPI Report PDF](https://github.com/samdev-pro/KPI-Construction-Bot/blob/main/output/kpi_report.pdf)
+
 ---
 
 ## 📁 Project Structure
@@ -90,8 +92,6 @@ construction_kpi_bot/
 ---
 
 ## 📊 Outputs
-
-📸 [View KPI Report PDF](https://github.com/samdev-pro/KPI-Construction-Bot/blob/main/output/kpi_report.pdf)
 
 The generated PDF includes:
 
