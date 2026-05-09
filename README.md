@@ -143,5 +143,5 @@ The system provides consistent, repeatable, and easily auditable KPI reporting, 
 
 ## 🤝 Contact
 
-Interested in how I can help your team transform its construction data workflows? Let’s connect.<br />
+Interested in how I can help your team transform it's data workflows? Let’s connect.<br />
 📧 [Email Me](mailto:sam@samhuss.dev)  💼 [LinkedIn](https://www.linkedin.com/in/samhuss/)
